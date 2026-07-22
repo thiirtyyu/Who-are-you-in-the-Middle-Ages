@@ -24,7 +24,7 @@ const MEMBERS = [
     contact: [{ label: 'Instagram', value: 'ake_atthapol', url: 'https://www.instagram.com/ake_atthapol' },]
   },
   {
-    name: 'n_net2009', role: 'Artist', icon: '', image: '',
+    name: 'NE-3s', role: 'Artist', icon: '', image: '',
     penName: '',
     profileImage: '',
     contact: [{ label: 'Instagram', value: 'n_net2009', url: 'https://www.instagram.com/n_net2009/' },]
@@ -36,13 +36,13 @@ const MEMBERS = [
     contact: [{ label: 'Instagram', value: '', url: '' },]
   },
   {
-    name: 'อาร์ท', role: 'Animator', icon: '', image: '',
+    name: 'อาร์ท', role: 'Voice Actor', icon: '', image: '',
     penName: '',
     profileImage: '',
-    contact: [{ label: 'Instagram', value: ' ' },]
+    contact: [{ label: '', value: ' ' },]
   },
   {
-    name: 'Toey', role: 'Animator', icon: '',
+    name: 'Toey', role: 'Voice Actor', icon: '',
     image: 'assets/images/credit/12_20260714215321.png',
     penName: '',
     profileImage: 'assets/images/credit/12_20260714215321.png',

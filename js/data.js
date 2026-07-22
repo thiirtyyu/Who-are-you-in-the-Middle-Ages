@@ -67,7 +67,7 @@ const quizData = {
 
     {
       type: 'story',
-      image: "aassets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "",
       paragraphs: [
         "อืม...เลือกได้ดี"
       ]
@@ -77,7 +77,7 @@ const quizData = {
       type: 'question',
       id: 3,
       title: "สะพานที่พังลง",
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "assets/images/backgrounds/ภาพที่ 5 เดินข้ามสะพานไปที่ประตูวัง.png",
       story: "เมื่อเดินทางมาถึงสะพานหินเก่า สะพานกลับพังลงต่อหน้าคุณ อีกฝั่งหนึ่งคือเส้นทางไปยังเมืองหลวง แต่ด้านล่างเป็นเหวลึกและมีหมอกทมิฬลอยอยู่ ตอนนี้คุณจะทำอย่างไร?",
       answers: [
         { text: "คำนวณวิธีข้ามอย่างปลอดภัย เช่น ใช้เชือกหรือหาทางอ้อม", type: "T" },
@@ -89,7 +89,7 @@ const quizData = {
 
     {
       type: 'story',
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "",
       paragraphs: [
         "ด้วยการตัดสินใจของคุณ คุณและชายชราจึงข้ามผ่านอุปสรรคตรงหน้าไปได้สำเร็จ"
       ]
@@ -99,7 +99,7 @@ const quizData = {
       type: 'question',
       id: 4,
       title: "ประตูเมืองหลวง",
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "assets/images/backgrounds/ภาพที่ 6 เดินไปถึงที่หน้าประตูวัง.png",
       story: "คุณมาถึงประตูเมืองหลวง แต่ทหารยามไม่ยอมเปิดประตู ด้านหลังคุณมีผู้ลี้ภัยจำนวนมาก และหมอกทมิฬกำลังใกล้เข้ามา คุณจะทำอย่างไร?",
       answers: [
         { text: "เจรจากับทหารยามด้วยเหตุผลแม้จะใช้เวลานาน", type: "T" },
@@ -111,7 +111,7 @@ const quizData = {
 
     {
       type: 'story',
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "",
       paragraphs: [
         "สุดท้ายทหารใจอ่อน และยอมเปิดประตูให้คุณกับเหล่าผู้ลี้ภัยเข้าเมืองได้อย่างปลอดภัย"
       ]
@@ -119,7 +119,7 @@ const quizData = {
 
     {
       type: 'story',
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "assets/images/backgrounds/ภาพที่ 7 เสียงระฆังเตือนภัยทุกคน.png",
       paragraphs: [
         "ทันใดนั้น เสียงระฆังเตือนภัยจากปราสาทก็ดังสนั่นขึ้น หมอกทมิฬพรั่งพรูเข้ามาอย่างรวดเร็ว ผู้คนเริ่มแตกตื่นและวิ่งหนีกันอย่างโกลาหล"
       ]
@@ -127,7 +127,7 @@ const quizData = {
 
     {
       type: 'story',
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "assets/images/backgrounds/ภาพที่ 8 ทหารบอกให้หนีไปทางลับใต้ปราสาท.png",
       paragraphs: [
         "ทหารยามหันมาบอกคุณว่า \u201cใต้ปราสาทมีห้องโถงลับที่ใช้เป็นที่หลบภัยของเมือง ขอให้เจ้าพาชาวบ้านเหล่านี้ไปซ่อนตัวที่นั่น\u201d"
       ]
@@ -137,7 +137,7 @@ const quizData = {
       type: 'question',
       id: 5,
       title: "ทางสู่ที่หลบภัย",
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "assets/images/backgrounds/ภาพที่ 8 ทหารบอกให้หนีไปทางลับใต้ปราสาท.png",
       story: "คุณจะทำอย่างไร?",
       answers: [
         { text: "ตะโกนเรียกให้ทุกคนตั้งสติ แล้วนำทางผู้ลี้ภัยไปยังที่หลบภัยทันที", type: "E" },
@@ -151,7 +151,7 @@ const quizData = {
       type: 'question',
       id: 6,
       title: "เด็กที่พลัดพราก",
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "assets/images/backgrounds/ภาพที่ 9 หมอกทมิฬเริ่มไล่ตามหลังมา.png",
       story: "ระหว่างพาผู้ลี้ภัยไปยังที่หลบภัย เด็กหลายคนพลัดพรากจากผู้ปกครองท่ามกลางความโกลาหล ขณะเดียวกัน หมอกทมิฬกำลังไล่เข้ามาใกล้ และผู้ลี้ภัยที่เหลือยังต้องเดินต่อ",
       answers: [
         { text: "ประเมินสถานการณ์อย่างรวดเร็ว แล้วเลือกวิธีที่ช่วยคนได้มากที่สุด แม้อาจต้องตัดสินใจยาก", type: "T" },
@@ -163,7 +163,7 @@ const quizData = {
 
     {
       type: 'story',
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "",
       paragraphs: [
         "หลังจากพาผู้ลี้ภัยและเด็ก ๆ กลับมารวมกลุ่มได้สำเร็จ ทุกคนรีบมุ่งหน้าไปยังที่หลบภัยใต้ปราสาท",
         "แต่ก่อนจะถึงประตูทางเข้า พื้นดินก็สั่นสะเทือนอย่างรุนแรง เงาขนาดมหึมากางปีกเหนือเมืองหลวง"
@@ -172,9 +172,10 @@ const quizData = {
 
     {
       type: 'story',
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "assets/images/backgrounds/ภาพที่ 10 มังกรปรากฎตัว.png",
+      fullImage: true,
       paragraphs: [
-        "รูปมังกร"
+        ""
       ]
     },
 
@@ -182,7 +183,7 @@ const quizData = {
       type: 'question',
       id: 7,
       title: "ู้พลังสุดท้าย",
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "assets/images/backgrounds/ภาพที่ 11 ตัวละครหลักมีเเสงสว่างออกมา.png",
       story: "ในวินาทีนั้น แสงในตัวคุณสว่างขึ้น และกลายเป็นพลังสุดท้ายที่จะใช้หยุดมังกรตนนี้ คุณคิดว่าพลังที่บ่งบอกตัวคุณคืออะไร?",
       answers: [
         { text: "พลังแห่งผู้นำ — รวมผู้คนให้ลุกขึ้นสู้ และนำทุกคนต้านมังกรวาเวล", type: "E" },
@@ -194,7 +195,7 @@ const quizData = {
 
     {
       type: 'story',
-      image: "assets/images/backgrounds/9F7AB973-BAA6-4324-8FD1-F76516236A7F.jpg",
+      image: "assets/images/backgrounds/ภาพที่ 11 ตัวละครหลักมีเเสงสว่างออกมา.png",
       isLast: true,
       paragraphs: [
         "แสงในตัวคุณพุ่งเข้าปะทะกับหมอกทมิฬ จนเสียงคำรามของมังกรวาเวลค่อย ๆ เงียบลง",
@@ -207,7 +208,7 @@ const quizData = {
 
   results: {
 
-    // finish
+
     ENTJ: {
       animal: "สิงโต",
       job: "ราชา",

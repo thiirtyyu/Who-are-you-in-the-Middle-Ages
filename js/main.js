@@ -128,6 +128,25 @@ function enterAnimation(fromX) {
 }
 
 function buildStoryHTML(slide, index, isLast) {
+  const backBtn = index > 0
+    ? `<button class="btn-slide-back" id="btnBack" type="button">← ย้อนกลับ</button>`
+    : '<span></span>';
+
+  const nextLabel = isLast ? 'ดูผลลัพธ์' : 'ถัดไป →';
+  const nextClass = isLast ? 'btn-next btn-next--final' : 'btn-next';
+
+  // Full-screen image slide (e.g. dragon reveal)
+  if (slide.fullImage && slide.image) {
+    return `
+    <div class="slide-content story-slide story-slide--full">
+      <div class="slide-img-full" style="background-image:url('${slide.image}')"></div>
+      <div class="slide-nav slide-nav--overlay">
+        ${backBtn}
+        <button class="${nextClass}" id="btnNext" type="button">${nextLabel}</button>
+      </div>
+    </div>`;
+  }
+
   const imgHtml = slide.image
     ? `<div class="slide-img" style="background-image:url('${slide.image}')"></div>`
     : '';
@@ -135,13 +154,6 @@ function buildStoryHTML(slide, index, isLast) {
   const parasHtml = slide.paragraphs
     .map(p => `<p class="story-para">${escapeHtml(p)}</p>`)
     .join('');
-
-  const backBtn = index > 0
-    ? `<button class="btn-slide-back" id="btnBack" type="button">← ย้อนกลับ</button>`
-    : '<span></span>';
-
-  const nextLabel = isLast ? 'ดูผลลัพธ์' : 'ถัดไป →';
-  const nextClass = isLast ? 'btn-next btn-next--final' : 'btn-next';
 
   return `
     <div class="slide-content story-slide">
