@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> — คุณคือใครในยุคกลาง?</title>
     <meta name="description" content="แบบทดสอบบุคลิกภาพผ่านการผจญภัยในดินแดนแฟนตาซี ยุคกลาง">
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self';
+                   style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+                   font-src https://fonts.gstatic.com;
+                   img-src 'self' data:;
+                   media-src 'self';
+                   connect-src 'self';
+                   frame-ancestors 'none';
+                   base-uri 'self';
+                   form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="no-referrer">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap"
@@ -47,6 +63,7 @@
     <audio id="bgmPlayer" loop></audio>
     <audio id="sfxPlayer"></audio>
 
+    <script src="js/security.js"></script>
     <script src="js/data.js"></script>
     <script src="js/quiz.js"></script>
     <script src="js/main.js"></script>

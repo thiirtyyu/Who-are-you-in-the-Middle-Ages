@@ -33,7 +33,7 @@ const MEMBERS = [
     name: 'MOJI', role: 'Artist', icon: '', image: '',
     penName: '',
     profileImage: '',
-    contact: [{ label: 'Instagram', value: '', url: '' },]
+    contact: [{ label: '', value: '', url: '' },]
   },
   {
     name: 'อาร์ท', role: 'Voice Actor', icon: '', image: '',
@@ -43,9 +43,9 @@ const MEMBERS = [
   },
   {
     name: 'Toey', role: 'Voice Actor', icon: '',
-    image: 'assets/images/credit/12_20260714215321.png',
+    image: 'assets/images/credit/12_20260714215321.webp',
     penName: '',
-    profileImage: 'assets/images/credit/12_20260714215321.png',
+    profileImage: 'assets/images/credit/12_20260714215321.webp',
     contact: [{ label: 'Instagram', value: 'tt_oeeey', url: 'https://www.instagram.com/tt_oeeey' },]
   },
 ];

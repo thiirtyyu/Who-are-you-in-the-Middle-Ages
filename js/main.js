@@ -4,6 +4,31 @@ const sceneResult = document.getElementById('sceneResult');
 const slideArea = document.getElementById('slideArea');
 const resultContent = document.getElementById('resultContent');
 
+// ─── Image Preloader ───
+const _imgCache = {};
+
+function preloadImage(src) {
+  if (!src || _imgCache[src]) return;
+  const img = new Image();
+  img.src = src;
+  _imgCache[src] = img;
+}
+
+function preloadAhead(currentIndex, count) {
+  const slides = quizData.slides;
+  for (let i = 1; i <= count; i++) {
+    const next = slides[currentIndex + i];
+    if (next && next.image) preloadImage(next.image);
+  }
+  // Also preload result character images if near the end
+  const remaining = slides.length - currentIndex;
+  if (remaining <= 3 && quizData.results) {
+    Object.values(quizData.results).forEach(r => {
+      if (r.image) preloadImage(r.image);
+    });
+  }
+}
+
 const bgmPlayer = document.getElementById('bgmPlayer');
 const sfxPlayer = document.getElementById('sfxPlayer');
 
@@ -112,6 +137,9 @@ function renderSlide(index, direction) {
   }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Preload next 2 slides' images
+  preloadAhead(index, 2);
 }
 
 function enterAnimation(fromX) {
@@ -368,6 +396,12 @@ function escapeHtml(str) {
 document.addEventListener('DOMContentLoaded', () => {
   initIntroPage();
 
+  // Preload intro image + first 3 slides immediately
+  if (quizData.intro.image) preloadImage(quizData.intro.image);
+  for (let i = 0; i < 3 && i < quizData.slides.length; i++) {
+    const s = quizData.slides[i];
+    if (s && s.image) preloadImage(s.image);
+  }
 
   if (quizData.intro.bgm) {
 

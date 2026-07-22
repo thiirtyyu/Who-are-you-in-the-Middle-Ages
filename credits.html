@@ -7,6 +7,20 @@
     <title>ผู้สร้าง??</title>
     <meta name="description" content="End Credits — พบกับสมาชิกกิลด์ผู้สร้างสรรค์แบบทดสอบบุคลิกภาพยุคกลาง">
 
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+                   script-src 'self';
+                   style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+                   font-src https://fonts.gstatic.com;
+                   img-src 'self' data:;
+                   media-src 'self';
+                   connect-src 'self';
+                   frame-ancestors 'none';
+                   base-uri 'self';
+                   form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="no-referrer">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap"
@@ -24,11 +38,11 @@
 
         <div class="credits-banner">
             <span class="banner-flourish-left" aria-hidden="true">❧—</span>
-            <h1 class="banner-title" id="creditsTitle">?????</h1>
+            <h1 class="banner-title" id="creditsTitle">จัดทำโดยกลุ่ม VIVII</h1>
             <span class="banner-flourish-right" aria-hidden="true">—❧</span>
         </div>
 
-        <p class="credits-subtitle" id="creditsSubtitle">สมาชิก VIVII</p>
+        <p class="credits-subtitle" id="creditsSubtitle"></p>
 
         <div class="credits-divider" aria-hidden="true">
             <span class="divider-icon">◆</span>
@@ -43,7 +57,7 @@
 
         <div class="credits-footer-banner">
             <span class="footer-deco" aria-hidden="true">— ✦ —</span>
-            <p class="footer-motto" id="creditsMotto">จัดทำโดยกลุ่ม VIVII — ขอขอขอบคุณที่ร่วมผจญภัย</p>
+            <p class="footer-motto" id="creditsMotto">ขอขอขอบคุณที่ร่วมผจญภัย</p>
             <span class="footer-deco" aria-hidden="true">— ✦ —</span>
         </div>
 
@@ -69,6 +83,7 @@
         </div>
     </div>
 
+    <script src="js/security.js"></script>
     <script src="js/credits.js"></script>
 </body>
 
