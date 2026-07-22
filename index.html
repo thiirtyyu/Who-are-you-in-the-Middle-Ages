@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> — คุณคือใครในยุคกลาง?</title>
+    <meta name="description" content="แบบทดสอบบุคลิกภาพผ่านการผจญภัยในดินแดนแฟนตาซี ยุคกลาง">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <div class="quiz-wrapper">
+
+        <div class="scene active visible" id="sceneIntro">
+            <div class="intro-inner">
+                <div class="intro-hero" id="introHeroWrap">
+                    <img id="introHeroImg" src="" alt="" class="intro-hero-img" />
+                </div>
+                <div class="intro-label" id="introLabel">จัดทำโดยกลุ่ม VIVII</div>
+                <h1 class="intro-title" id="introTitle">คุณคือใครในยุคกลาง?</h1>
+                <p class="intro-desc" id="introDesc"></p>
+                <div class="intro-divider"></div>
+                <button class="btn-start" id="btnStart" type="button">เริ่มการเดินทาง</button>
+            </div>
+        </div>
+
+
+        <button class="btn-mute" id="btnMute" type="button" aria-label="Mute Background Music">
+            <span class="icon-sound">🔊</span>
+        </button>
+
+        <div class="scene" id="sceneSlide">
+            <div class="slide-area" id="slideArea">
+            </div>
+        </div>
+        <div class="scene" id="sceneResult">
+            <div class="result-area" id="resultContent">
+            </div>
+        </div>
+    </div>
+    <audio id="bgmPlayer" loop></audio>
+    <audio id="sfxPlayer"></audio>
+
+    <script src="js/data.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
