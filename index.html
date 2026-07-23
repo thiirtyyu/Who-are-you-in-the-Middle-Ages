@@ -10,12 +10,12 @@
     <!-- Security Headers -->
     <meta http-equiv="Content-Security-Policy"
           content="default-src 'self';
-                   script-src 'self';
+                   script-src 'self' https://gc.zgo.at;
                    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
                    font-src https://fonts.gstatic.com;
                    img-src 'self' data:;
                    media-src 'self';
-                   connect-src 'self' https://api.countapi.xyz;
+                   connect-src 'self' https://thirtyyu.goatcounter.com;
                    frame-ancestors 'none';
                    base-uri 'self';
                    form-action 'self';">
@@ -31,8 +31,6 @@
 </head>
 
 <body>
-    <div class="admin-panel" id="adminPanel"></div>
-
     <div class="quiz-wrapper">
 
         <div class="scene active visible" id="sceneIntro">
@@ -69,7 +67,8 @@
     <script src="js/data.js"></script>
     <script src="js/quiz.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/visitor-counter.js"></script>
+    <script data-goatcounter="https://thirtyyu.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
 </body>
 
 </html>
