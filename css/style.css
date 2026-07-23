@@ -903,185 +903,100 @@ body {
   }
 }
 
+
 /* ════════════════════════════════════════════════
-   GitHub Stats Badge — Medieval Scroll Style
+   Admin Visitor Counter (hidden by default)
+   Visible only via ?admin URL parameter
    ════════════════════════════════════════════════ */
 
-.gh-stats-badge {
+.admin-panel {
+  display: none;
   position: fixed;
-  top: 1.25rem;
-  left: 1.25rem;
-  z-index: 90;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0;
-
-  /* slide-in animation */
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-  pointer-events: none;
-}
-
-.gh-stats-badge.gh-stats--visible {
-  opacity: 1;
-  transform: translateX(0);
-  pointer-events: auto;
-}
-
-.gh-stats-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.45rem 0.85rem;
-  background: linear-gradient(135deg, #2d1f10 0%, #3a2a18 60%, #4a3520 100%);
-  border: 1.5px solid #D8B96A;
-  border-radius: 8px;
-  color: #e8d5b0;
-  text-decoration: none;
+  bottom: 4.5rem;
+  right: 1.5rem;
+  z-index: 200;
   font-family: var(--font);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25),
-              inset 0 1px 0 rgba(216, 185, 106, 0.15);
-  transition: transform 0.2s ease,
-              box-shadow 0.2s ease,
-              border-color 0.2s ease;
-  position: relative;
-  overflow: hidden;
+  animation: adminSlideIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-/* Subtle shimmer overlay */
-.gh-stats-link::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(90deg,
-    transparent 0%,
-    rgba(216, 185, 106, 0.08) 50%,
-    transparent 100%);
-  transition: left 0.6s ease;
-  pointer-events: none;
+@keyframes adminSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
-.gh-stats-link:hover::before {
-  left: 120%;
+.admin-panel.admin-panel--show {
+  display: block;
 }
 
-.gh-stats-link:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35),
-              inset 0 1px 0 rgba(216, 185, 106, 0.25);
-  border-color: #e8c96a;
+.admin-card {
+  background: linear-gradient(145deg, #1a1210 0%, #2a1f18 50%, #1e1612 100%);
+  border: 1.5px solid #D8B96A;
+  border-radius: 12px;
+  padding: 0.85rem 1.1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45),
+              inset 0 1px 0 rgba(216, 185, 106, 0.12);
+  min-width: 180px;
 }
 
-.gh-stats-link:active {
-  transform: translateY(0);
-}
-
-.gh-stats-icon {
+.admin-card-header {
   display: flex;
   align-items: center;
-  color: #D8B96A;
-  flex-shrink: 0;
-  transition: color 0.2s ease;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(216, 185, 106, 0.2);
 }
 
-.gh-stats-link:hover .gh-stats-icon {
-  color: #f0d878;
+.admin-card-icon {
+  font-size: 0.85rem;
 }
 
-.gh-stats-label {
-  color: #D8B96A;
-  font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: 0.06em;
-}
-
-.gh-stats-divider {
-  color: rgba(216, 185, 106, 0.3);
-  font-size: 0.7rem;
-  margin: 0 0.1rem;
-  user-select: none;
-}
-
-.gh-stats-items {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-}
-
-.gh-stat-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.2rem;
-}
-
-.gh-stat-emoji {
+.admin-card-title {
   font-size: 0.72rem;
-  line-height: 1;
+  font-weight: 700;
+  color: #D8B96A;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.gh-stat-val {
+.admin-stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+}
+
+.admin-stat-label {
   font-size: 0.78rem;
+  color: #a89880;
+  font-weight: 500;
+}
+
+.admin-stat-val {
+  font-size: 1.1rem;
   font-weight: 700;
   color: #F8F1E6;
   font-variant-numeric: tabular-nums;
 }
 
-.gh-stats-updated {
-  font-family: var(--font);
-  font-size: 0.65rem;
-  color: #9a8a70;
-  padding: 0.2rem 0.85rem;
-  letter-spacing: 0.02em;
-  opacity: 0;
-  transform: translateY(-4px);
-  transition: opacity 0.3s ease 0.3s, transform 0.3s ease 0.3s;
+.admin-stat-val.admin-stat-loading {
+  font-size: 0.78rem;
+  color: #8a7a68;
+  font-weight: 400;
 }
 
-.gh-stats--visible .gh-stats-updated {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Mobile: smaller badge, hide update date */
-@media (max-width: 480px) {
-  .gh-stats-badge {
-    top: 0.75rem;
-    left: 0.75rem;
-  }
-
-  .gh-stats-link {
-    padding: 0.35rem 0.65rem;
-    font-size: 0.7rem;
-    gap: 0.35rem;
-  }
-
-  .gh-stats-icon svg {
-    width: 14px;
-    height: 14px;
-  }
-
-  .gh-stats-items {
-    gap: 0.4rem;
-  }
-
-  .gh-stat-emoji {
-    font-size: 0.65rem;
-  }
-
-  .gh-stat-val {
-    font-size: 0.7rem;
-  }
-
-  .gh-stats-updated {
-    display: none;
-  }
+.admin-footer {
+  margin-top: 0.5rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid rgba(216, 185, 106, 0.15);
+  font-size: 0.62rem;
+  color: #6a5a48;
+  text-align: center;
+  letter-spacing: 0.03em;
 }

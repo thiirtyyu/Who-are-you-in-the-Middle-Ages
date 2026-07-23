@@ -15,7 +15,7 @@
                    font-src https://fonts.gstatic.com;
                    img-src 'self' data:;
                    media-src 'self';
-                   connect-src 'self' https://api.github.com;
+                   connect-src 'self' https://api.counterapi.dev;
                    frame-ancestors 'none';
                    base-uri 'self';
                    form-action 'self';">
@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <div class="gh-stats-badge" id="githubStats"></div>
+    <div class="admin-panel" id="adminPanel"></div>
 
     <div class="quiz-wrapper">
 
@@ -69,7 +69,7 @@
     <script src="js/data.js"></script>
     <script src="js/quiz.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/github-stats.js"></script>
+    <script src="js/visitor-counter.js"></script>
 </body>
 
 </html>
