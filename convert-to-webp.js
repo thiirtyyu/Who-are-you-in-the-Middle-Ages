@@ -21,9 +21,9 @@ const IMAGES_DIR = path.join(__dirname, 'assets', 'images');
 // Settings per folder
 const FOLDER_SETTINGS = {
   'backgrounds': { quality: 80, maxWidth: 1920 },
-  'char':        { quality: 85, maxWidth: 1024 },
-  'characters':  { quality: 85, maxWidth: 1024 },
-  'credit':      { quality: 80, maxWidth: 1024 },
+  'char': { quality: 85, maxWidth: 1024 },
+  'characters': { quality: 85, maxWidth: 1024 },
+  'credit': { quality: 80, maxWidth: 1024 },
 };
 
 async function convertFile(filePath, settings) {
@@ -35,7 +35,6 @@ async function convertFile(filePath, settings) {
   try {
     let pipeline = sharp(filePath);
 
-    // Get metadata to check if resize is needed
     const meta = await pipeline.metadata();
 
     if (meta.width > settings.maxWidth) {

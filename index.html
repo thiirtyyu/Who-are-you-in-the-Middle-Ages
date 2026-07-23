@@ -15,7 +15,7 @@
                    font-src https://fonts.gstatic.com;
                    img-src 'self' data:;
                    media-src 'self';
-                   connect-src 'self';
+                   connect-src 'self' https://api.github.com;
                    frame-ancestors 'none';
                    base-uri 'self';
                    form-action 'self';">
@@ -31,6 +31,8 @@
 </head>
 
 <body>
+    <div class="gh-stats-badge" id="githubStats"></div>
+
     <div class="quiz-wrapper">
 
         <div class="scene active visible" id="sceneIntro">
@@ -67,6 +69,7 @@
     <script src="js/data.js"></script>
     <script src="js/quiz.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/github-stats.js"></script>
 </body>
 
 </html>
