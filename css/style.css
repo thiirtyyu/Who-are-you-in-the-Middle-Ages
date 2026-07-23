@@ -41,7 +41,7 @@
 }
 
 html {
-  font-size: 13px;
+  font-size: 14px;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -278,7 +278,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
   border-top: none;
   margin-top: 0;
   z-index: 10;
@@ -287,7 +287,7 @@ body {
 .slide-nav--overlay .btn-slide-back,
 .slide-nav--overlay .btn-next {
   color: #fff;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .story-body {

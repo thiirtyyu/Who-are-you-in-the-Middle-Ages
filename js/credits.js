@@ -1,44 +1,44 @@
 const MEMBERS = [
   {
-    name: 'Numcha', role: 'Producer', icon: '', image: '',
+    name: 'Numcha', role: 'Producer', icon: '', image: 'assets/images/characters/12_20260723062802.webp',
     penName: '',
-    profileImage: '',
+    profileImage: 'assets/images/characters/12_20260723062802.webp',
     contact: [{ label: 'Instagram', value: 'glimpssesoftea', url: 'https://www.instagram.com/glimpssesoftea' },]
   },
   {
-    name: 'thirtyyu', role: 'Developer', icon: '', image: '',
+    name: 'thirtyyu', role: 'Developer', icon: '', image: 'assets/images/characters/12_20260723011558.webp',
     penName: '',
-    profileImage: '',
+    profileImage: 'assets/images/characters/12_20260723011558.webp',
     contact: [{ label: 'Instagram', value: 'thiirtyyu', url: 'https://www.instagram.com/thiirtyyu' },]
   },
   {
-    name: 'KitsuhaK', role: 'Artist', icon: '', image: '',
+    name: 'KitsuhaK', role: 'Artist', icon: '', image: 'assets/images/characters/12_20260722221647.webp',
     penName: '',
-    profileImage: '',
+    profileImage: 'assets/images/characters/12_20260722221647.webp',
     contact: [{ label: 'Twitter', value: '@RgsKitsune', url: 'https://x.com/RgsKitsune' },]
   },
   {
-    name: 'Aky', role: 'Artist', icon: '', image: '',
+    name: 'Aky', role: 'Artist', icon: '', image: 'assets/images/characters/12_20260723073914.webp',
     penName: '',
-    profileImage: '',
+    profileImage: 'assets/images/characters/12_20260723073914.webp',
     contact: [{ label: 'Instagram', value: 'ake_atthapol', url: 'https://www.instagram.com/ake_atthapol' },]
   },
   {
-    name: 'NE-3s', role: 'Artist', icon: '', image: '',
+    name: 'NE-3s', role: 'Artist', icon: '', image: 'assets/images/characters/12_20260723062517.webp',
     penName: '',
-    profileImage: '',
+    profileImage: 'assets/images/characters/12_20260723062517.webp',
     contact: [{ label: 'Instagram', value: 'n_net2009', url: 'https://www.instagram.com/n_net2009/' },]
   },
   {
-    name: 'MOJI', role: 'Artist', icon: '', image: '',
+    name: 'MOJI', role: 'Artist', icon: '', image: 'assets/images/characters/12_20260723074223.webp',
     penName: '',
-    profileImage: '',
+    profileImage: 'assets/images/characters/12_20260723074223.webp',
     contact: [{ label: '', value: '', url: '' },]
   },
   {
-    name: 'อาร์ท', role: 'Voice Actor', icon: '', image: '',
+    name: 'อาร์ท', role: 'Voice Actor', icon: '', image: 'assets/images/characters/12_20260722220459.webp',
     penName: '',
-    profileImage: '',
+    profileImage: 'assets/images/characters/12_20260722220459.webp',
     contact: [{ label: '', value: ' ' },]
   },
   {
